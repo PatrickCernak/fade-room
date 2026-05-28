@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ─── Favicon — ikonka v liste prehliadača ─── -->
+<!-- logo1.png sa použije ako ikonka automaticky -->
+<!-- Ak chceš ostrú ikonku, odporúčam neskôr     -->
+<!-- vygenerovať .ico na: realfavicongenerator.net -->
+<link rel="icon"             type="image/png" href="minilogo.png" />
+<link rel="apple-touch-icon"                  href="minilogo.png" />
+<meta name="theme-color" content="#c8a96e" />
+
+
+<!-- ─── Základné SEO ─── -->
+<title>Fade Room Studio | Barbershop Šurany — Skin Fade, Strih, Brada</title>
+<meta name="description" content="Fade Room Studio — prémiový barbershop v Šuranoch. Skin fade, strojčekový strih, úprava brady, junior a senior strih. Rezervujte online cez Booqme. Hledíkova 4, Šurany." />
+<meta name="keywords" content="barbershop Šurany, Fade Room Studio, skin fade Šurany, strih Šurany, úprava brady Šurany, barber Šurany, holič Šurany, Pato Dragun barber" />
+<meta name="author" content="Fade Room Studio" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.faderoomstudio.sk/" />
+ 
+<!-- ─── Open Graph (Facebook, Instagram, WhatsApp náhľad) ─── -->
+<meta property="og:type"        content="website" />
+<meta property="og:url"         content="https://www.faderoomstudio.sk/" />
+<meta property="og:title"       content="Fade Room Studio | Barbershop Šurany" />
+<meta property="og:description" content="Prémiový barbershop v Šuranoch. Skin fade, strih, brada. Rezervujte online." />
+<meta property="og:image"       content="https://www.faderoomstudio.sk/og-image.jpg" />
+<meta property="og:image:width"  content="1200" />
+<meta property="og:image:height" content="565" />
+<meta property="og:locale"      content="sk_SK" />
+<meta property="og:site_name"   content="Fade Room Studio" />
+ 
+<!-- ─── Twitter / X Card ─── -->
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Fade Room Studio | Barbershop Šurany" />
+<meta name="twitter:description" content="Prémiový barbershop v Šuranoch. Skin fade, strih, brada. Rezervujte online." />
+<meta name="twitter:image"       content="https://www.faderoomstudio.sk/og-image.jpg" />
+ 
+<!-- ─── Schema.org — Local Business (zobrazí sa v Google výsledkoch) ─── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Fade Room Studio",
+  "description": "Prémiový barbershop v Šuranoch ponúkajúci skin fade, strojčekový strih, úpravu brady, junior a senior strih.",
+  "url": "https://www.faderoomstudio.sk/",
+  "telephone": "+421949534282",
+  "email": "faderoomstudio@gmail.com",
+  "image": "https://www.faderoomstudio.sk/og-image.jpg",
+  "logo": "https://www.faderoomstudio.sk/logo1.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hledíkova 4",
+    "addressLocality": "Šurany",
+    "postalCode": "942 01",
+    "addressCountry": "SK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.0907,
+    "longitude": 18.1930
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    }
+  ],
+  "priceRange": "€€",
+  "sameAs": [
+    "https://www.instagram.com/faderoomstudio/"
+  ],
+  "hasMap": "https://maps.google.com/?q=Hledíkova+4,+Šurany",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "104",
+    "bestRating": "5"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --black:   #0a0a0a;
+  --dark:    #111111;
+  --card:    #161616;
+  --border:  #2a2a2a;
+  --mid:     #444444;
+  --silver:  #a8a8a8;
+  --white:   #f5f0eb;
+  --gold:    #c8a96e;
+  --gold-lt: #e2c98a;
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-serif:   'Cormorant Garamond', serif;
+  --font-playfair:'Playfair Display', serif;
+  --font-body:    'Jost', sans-serif;
+
+  --nav-h: 72px;
+  --section-pad: 120px 5vw;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+::selection { background: var(--gold); color: var(--black); }
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: .45;
+}
+
+/* ═══ HERO ═══ */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 100px 5vw 60px;
+}
+
+#hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 60px,
+      rgba(200,169,110,.04) 60px,
+      rgba(200,169,110,.04) 61px
+    );
+  pointer-events: none;
+}
+
+/* ─── ZVAČŠENÉ: hero eyebrow .8rem → .9rem ─── */
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: .9rem;
+  letter-spacing: .35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeUp .8s .2s forwards;
+}
+
+.hero-logo-img {
+  width: clamp(280px, 55vw, 700px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeUp .9s .4s forwards;
+  filter: drop-shadow(0 0 40px rgba(200,169,110,0.15));
+}
+
+.hero-rule {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 28px auto;
+  opacity: 0;
+  animation: fadeIn 1s .9s forwards;
+}
+
+.hero-slogan {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 400;
+  color: var(--silver);
+  letter-spacing: .05em;
+  opacity: 0;
+  animation: fadeUp .8s .7s forwards;
+}
+
+.hero-cta {
+  margin-top: 52px;
+  opacity: 0;
+  animation: fadeUp .8s 1.1s forwards;
+}
+
+/* ─── ZVAČŠENÉ: btn-primary .8rem → .9rem ─── */
+.btn-primary {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: .9rem;
+  font-weight: 500;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black);
+  background: var(--gold);
+  padding: 16px 42px;
+  border: 1px solid var(--gold);
+  transition: background .3s, color .3s, letter-spacing .3s;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--gold);
+  letter-spacing: .28em;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  animation: fadeIn 1s 1.6s forwards;
+}
+
+/* ─── ZVAČŠENÉ: scroll hint .7rem → .8rem ─── */
+.scroll-hint span {
+  font-size: .8rem;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+.scroll-arrow {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, var(--gold), transparent);
+  animation: arrowPulse 2s infinite;
+}
+
+/* ═══ NAVBAR ═══ */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  transition: background .4s, backdrop-filter .4s, border-color .4s;
+}
+
+#navbar.scrolled {
+  background: rgba(10,10,10,.88);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-logo-img {
+  height: 38px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(200,169,110,0.2));
+}
+
+/* ─── ZVAČŠENÉ: nav links .75rem → .85rem ─── */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+}
+
+nav ul li a {
+  font-size: .85rem;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--silver);
+  position: relative;
+  transition: color .3s;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width .3s;
+}
+
+nav ul li a:hover { color: var(--white); }
+nav ul li a:hover::after { width: 100%; }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--white);
+  transition: transform .3s, opacity .3s;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.mobile-nav.open { display: flex; }
+
+.mobile-nav a {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  letter-spacing: .1em;
+  color: var(--white);
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.mobile-nav a:hover { color: var(--gold); }
+
+/* ═══ SECTION COMMONS ═══ */
+.section {
+  padding: var(--section-pad);
+  position: relative;
+}
+
+/* ─── ZVAČŠENÉ: section label .72rem → .82rem ─── */
+.section-label {
+  font-size: .82rem;
+  letter-spacing: .35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  line-height: 1;
+  letter-spacing: .04em;
+  margin-bottom: 32px;
+}
+
+/* ─── ZVAČŠENÉ: section body 1.05rem → 1.15rem ─── */
+.section-body {
+  font-family: var(--font-playfair);
+  font-size: clamp(1.1rem, 1.4vw, 1.25rem);
+  font-weight: 400;
+  color: var(--silver);
+  max-width: 560px;
+  line-height: 1.85;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border) 20%, var(--border) 80%, transparent);
+  margin: 0;
+}
+
+/* ═══ O NAS ═══ */
+#o-nas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-image-block {
+  position: relative;
+}
+
+.about-main-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.about-image-block::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: -20px;
+  bottom: -20px;
+  border: 1px solid var(--gold);
+  opacity: .35;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  margin-top: 32px;
+}
+
+.stat-box {
+  background: var(--dark);
+  padding: 22px 18px;
+  text-align: center;
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  color: var(--gold);
+  line-height: 1;
+}
+
+/* ─── ZVAČŠENÉ: stat label .68rem → .78rem ─── */
+.stat-label {
+  font-size: .78rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--silver);
+  margin-top: 6px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ═══ GOOGLE REVIEWS ═══ */
+.reviews-section {
+  margin-top: 48px;
+}
+
+.reviews-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.reviews-google-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reviews-google-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.reviews-overall {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-score {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.reviews-stars-row {
+  display: flex;
+  gap: 2px;
+  margin-top: 2px;
+}
+
+.star-filled { color: #f4b942; font-size: 1rem; }
+
+/* ─── ZVAČŠENÉ: reviews count .72rem → .82rem ─── */
+.reviews-count {
+  font-size: .82rem;
+  color: var(--silver);
+  letter-spacing: .1em;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+.reviews-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) transparent;
+}
+
+.review-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--gold);
+  padding: 18px 20px;
+  transition: border-color .3s;
+}
+
+.review-card:hover { border-left-color: var(--gold-lt); }
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+/* ─── ZVAČŠENÉ: reviewer name .9rem → 1rem ─── */
+.reviewer-name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: .03em;
+}
+
+/* ─── ZVAČŠENÉ: review date .7rem → .8rem ─── */
+.review-date {
+  font-size: .8rem;
+  color: var(--mid);
+  font-weight: 300;
+  letter-spacing: .05em;
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+
+/* ─── ZVAČŠENÉ: review text .95rem → 1.05rem ─── */
+.review-text {
+  font-family: var(--font-playfair);
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--silver);
+  line-height: 1.65;
+  font-style: italic;
+}
+
+/* ═══ SLUZBY ═══ */
+#sluzby {
+  background: var(--dark);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  margin-top: 60px;
+  border: 1px solid var(--border);
+}
+
+.service-card {
+  background: var(--dark);
+  padding: 40px 32px;
+  position: relative;
+  overflow: hidden;
+  transition: background .3s;
+  cursor: default;
+}
+
+.service-card:hover { background: var(--card); }
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width .4s;
+}
+
+.service-card:hover::before { width: 100%; }
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.service-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: .06em;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+/* ─── ZVAČŠENÉ: service desc .88rem → 1rem ─── */
+.service-desc {
+  font-size: 1rem;
+  color: var(--silver);
+  line-height: 1.75;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.service-price {
+  font-family: var(--font-playfair);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--gold);
+}
+
+/* ═══ CENNIK ═══ */
+#cennik {
+  padding: var(--section-pad);
+}
+
+.cennik-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.cennik-col-header {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: .1em;
+  color: var(--gold);
+  text-align: center;
+  padding: 18px 24px;
+  background: var(--card);
+  border: 1px solid var(--gold);
+  border-bottom: none;
+  text-transform: uppercase;
+}
+
+.cennik-col-header .barber-sub {
+  display: block;
+  font-family: var(--font-playfair);
+  font-size: .9rem;
+  font-style: italic;
+  letter-spacing: .05em;
+  color: var(--silver);
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.price-table {
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.price-category { border-bottom: 1px solid var(--border); }
+.price-category:last-child { border-bottom: none; }
+
+/* ─── ZVAČŠENÉ: price cat header .68rem → .8rem ─── */
+.price-cat-header {
+  background: var(--card);
+  padding: 16px 32px;
+  font-size: .8rem;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border-bottom: 1px solid var(--border);
+  font-weight: 500;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+  border-bottom: 1px solid rgba(42,42,42,.5);
+  transition: background .2s;
+}
+
+.price-row:last-child { border-bottom: none; }
+.price-row:hover { background: var(--card); }
+
+/* ─── ZVAČŠENÉ: price item name 1.05rem → 1.1rem ─── */
+.price-item-name {
+  font-family: var(--font-playfair);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.price-dots {
+  flex: 1;
+  height: 1px;
+  background: repeating-linear-gradient(90deg, var(--border) 0 4px, transparent 4px 8px);
+  margin: 0 20px;
+  opacity: .5;
+}
+
+.price-amount {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: .06em;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .cennik-cols { grid-template-columns: 1fr; }
+}
+
+/* ═══ GALERIA — horizontálny scroll ═══ */
+#galeria {
+  background: var(--dark);
+  padding: var(--section-pad);
+}
+
+/* Wrapper so scrollbar sits nicely below */
+.gallery-scroll-wrap {
+  margin-top: 60px;
+  position: relative;
+}
+
+/* Horizontálne scrollovateľná línia fotiek */
+.gallery-scroll {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) var(--border);
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  user-select: none;
+}
+
+.gallery-scroll:active { cursor: grabbing; }
+
+.gallery-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.gallery-scroll::-webkit-scrollbar-track {
+  background: var(--border);
+}
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+/* ─── Každá fotka v galérii ─── */
+/* Ak chceš pridať/odobrať fotku: skopíruj/zmaž jeden .g-item blok v HTML */
+.gallery-scroll .g-item {
+  flex: 0 0 340px;       /* šírka každej fotky — zmeň podľa potreby */
+  height: 440px;          /* výška každej fotky — zmeň podľa potreby */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.gallery-scroll .g-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s ease;
+  pointer-events: none;
+}
+
+.gallery-scroll .g-item:hover img { transform: scale(1.04); }
+
+.g-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(200,169,110,.12);
+  opacity: 0;
+  transition: opacity .4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-scroll .g-item:hover .g-overlay { opacity: 1; }
+
+.g-overlay-icon {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+/* Fade hrany pre scroll efekt */
+.gallery-scroll-wrap::before,
+.gallery-scroll-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 12px;
+  width: 60px;
+  z-index: 2;
+  pointer-events: none;
+}
+.gallery-scroll-wrap::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--dark), transparent);
+}
+.gallery-scroll-wrap::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--dark), transparent);
+}
+
+/* ═══ REZERVACIA ═══ */
+#rezervacia {
+  /* ─── Trochu menší padding-top aby bol obsah vyššie ─── */
+  padding: 80px 5vw 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+#rezervacia::before {
+  content: 'BOOK';
+  font-family: var(--font-display);
+  font-size: 30vw;
+  color: rgba(200,169,110,.03);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.rezervacia-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 48px; /* znížené z 60px */
+}
+
+.rezervacia-center .section-body {
+  text-align: center;
+  margin: 0 auto 48px;
+}
+
+.btn-booking {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black);
+  background: var(--gold);
+  padding: 28px 64px;
+  border: 2px solid var(--gold);
+  transition: background .3s, color .3s, transform .3s, box-shadow .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-booking::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.btn-booking:hover {
+  background: transparent;
+  color: var(--gold);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 48px rgba(200,169,110,.25);
+}
+
+.btn-booking svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* ─── ZVAČŠENÉ: booking note .7rem → .82rem ─── */
+.booking-note {
+  margin-top: 24px;
+  font-size: .82rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--mid);
+  font-weight: 400;
+}
+
+/* ═══ KONTAKT ═══ */
+#kontakt {
+  background: var(--dark);
+  padding: var(--section-pad);
+}
+
+.kontakt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-top: 60px;
+}
+
+.kontakt-map-wrap {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.kontakt-map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  filter: invert(0.9) hue-rotate(180deg) saturate(0.6) brightness(0.85);
+}
+
+.kontakt-details { display: flex; flex-direction: column; gap: 0; }
+
+.contact-item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-item:first-child { padding-top: 0; }
+
+/* ─── ZVAČŠENÉ: contact label .65rem → .78rem ─── */
+.contact-item-label {
+  font-size: .78rem;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* ─── ZVAČŠENÉ: contact value 1.2rem → 1.25rem ─── */
+.contact-item-value {
+  font-family: var(--font-playfair);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.7;
+}
+
+.contact-item-value a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.contact-item-value a:hover { color: var(--gold); }
+
+/* ═══ FOOTER ═══ */
+#footer {
+  background: var(--black);
+  border-top: 1px solid var(--border);
+  padding: 64px 5vw 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.footer-logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 12px rgba(200,169,110,0.2));
+}
+
+/* Instagram odkaz */
+.footer-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  color: var(--silver);
+  text-decoration: none;
+  transition: border-color .3s, color .3s, background .3s;
+}
+
+.footer-instagram:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(200,169,110,.06);
+}
+
+.footer-instagram svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-rule {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+}
+
+/* ─── ZVAČŠENÉ: footer copy .7rem → .8rem ─── */
+.footer-copy {
+  font-size: .8rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--mid);
+  text-align: center;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.footer-copy a {
+  color: var(--silver);
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.footer-copy a:hover { color: var(--gold); }
+
+/* ═══ ANIMATIONS ═══ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes arrowPulse {
+  0%, 100% { opacity: .6; transform: scaleY(1); }
+  50%       { opacity: 1; transform: scaleY(1.1); }
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 900px) {
+  nav ul { display: none; }
+  .hamburger { display: flex; }
+
+  #o-nas,
+  .kontakt-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .gallery-scroll .g-item {
+    flex: 0 0 260px;
+    height: 340px;
+  }
+
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .about-stats { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  :root { --section-pad: 80px 5vw; }
+  .services-grid { grid-template-columns: 1fr; }
+  .gallery-scroll .g-item {
+    flex: 0 0 220px;
+    height: 280px;
+  }
+  .about-stats { grid-template-columns: 1fr; }
+  .price-row { padding: 14px 16px; }
+  .price-cat-header { padding: 14px 16px; }
+  .btn-booking { padding: 20px 36px; font-size: 1.1rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<header id="navbar">
+  <a href="#hero" class="nav-brand">
+    <!-- Logo vľavo hore -->
+    <img src="logo1.png"
+         alt="Fade Room Studio"
+         class="nav-logo-img" />
+  </a>
+  <nav>
+    <ul>
+      <li><a href="#o-nas">O nás</a></li>
+      <li><a href="#sluzby">Služby</a></li>
+      <li><a href="#cennik">Cenník</a></li>
+      <li><a href="#galeria">Galéria</a></li>
+      <li><a href="#rezervacia">Rezervácia</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#o-nas"      onclick="closeMobile()">O nás</a>
+  <a href="#sluzby"     onclick="closeMobile()">Služby</a>
+  <a href="#cennik"     onclick="closeMobile()">Cenník</a>
+  <a href="#galeria"    onclick="closeMobile()">Galéria</a>
+  <a href="#rezervacia" onclick="closeMobile()">Rezervácia</a>
+  <a href="#kontakt"    onclick="closeMobile()">Kontakt</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <p class="hero-eyebrow">Barbershop — Šurany</p>
+
+  <!-- Logo v strede hore -->
+  <img src="logo1.png"
+       alt="Fade Room Studio"
+       class="hero-logo-img" />
+
+  <div class="hero-rule"></div>
+  <p class="hero-slogan">Kde štýl stretáva remeslo</p>
+  <div class="hero-cta">
+    <a href="#rezervacia" class="btn-primary">Rezervovať termín</a>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ O NAS ═══ -->
+<section class="section" id="o-nas">
+  <!-- Ľavý stĺpec: fotka + štatistiky -->
+  <div class="about-image-block">
+    <!-- Hlavná fotka sekcie "O nás" -->
+    <img src="hlavna.png"
+         alt="Fade Room Studio interiér"
+         class="about-main-img" />
+    <div class="about-stats">
+      <div class="stat-box">
+        <div class="stat-num">1K+</div>
+        <div class="stat-label">Spokojných zákazníkov</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Roky skúseností</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">★★★★★</div>
+        <div class="stat-label">Skúsený tím barberov</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pravý stĺpec: text + recenzie -->
+  <div class="about-right">
+    <p class="section-label">O nás</p>
+    <h2 class="section-title">Viac ako len strih</h2>
+    <p class="section-body">
+      Fade Room Studio je miesto, kde sa starostlivosť o seba stretáva s pravým remeslom.
+      Náš tím skúsených barberov sa venuje každému klientovi individuálne —
+      od klasického strihu až po precízny skin fade. Vitajte doma.
+    </p>
+
+    <!-- Google Reviews -->
+    <div class="reviews-section">
+      <div class="reviews-header">
+        <div class="reviews-google-badge">
+          <!-- Google G icon -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+        </div>
+        <div class="reviews-overall">
+          <div class="reviews-score">5.0</div>
+          <div class="reviews-stars-row">
+            <span class="star-filled">★</span>
+            <span class="star-filled">★</span>
+            <span class="star-filled">★</span>
+            <span class="star-filled">★</span>
+            <span class="star-filled">★</span>
+          </div>
+          <div class="reviews-count">Google recenzie</div>
+        </div>
+      </div>
+
+      <div class="reviews-scroll">
+        <div class="review-card">
+          <div class="review-top">
+            <span class="reviewer-name">Marek H.</span>
+            <span class="review-date">pred 2 týždňami</span>
+          </div>
+          <div class="review-stars">
+            <span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span>
+          </div>
+          <p class="review-text">Najlepší barbershop v okolí. Pato je skutočný profesionál — skin fade na jednotku, čistý a presný. Prostredie je top, atmosféra skvelá. Chodím pravidelne a nikdy som nebol sklamaný.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-top">
+            <span class="reviewer-name">Tomáš K.</span>
+            <span class="review-date">pred mesiacom</span>
+          </div>
+          <div class="review-stars">
+            <span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span>
+          </div>
+          <p class="review-text">Výborná práca, perfektný prístup. Nikde inde v Šuranoch také výsledky nedostanete. Strih vydržal dlho v tvare a brada bola upravená do detailu. Vrelo odporúčam!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-top">
+            <span class="reviewer-name">Patrik S.</span>
+            <span class="review-date">pred 3 týždňami</span>
+          </div>
+          <div class="review-stars">
+            <span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span>
+          </div>
+          <p class="review-text">Skvelé miesto s úžasnou atmosférou. Grafiti na stene, čierne stoličky, hexagónové svetlá — všetko dokonale do seba zapadá. A hlavne — strih je vždy fantastický.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-top">
+            <span class="reviewer-name">Lukáš M.</span>
+            <span class="review-date">pred 5 týždňami</span>
+          </div>
+          <div class="review-stars">
+            <span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span>
+          </div>
+          <p class="review-text">Konečne barbershop v Šuranoch na európskej úrovni. Online rezervácia funguje skvele, čakanie žiadne, výsledok presne podľa predstáv. Toto je teraz môj domov.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-top">
+            <span class="reviewer-name">Radoslav N.</span>
+            <span class="review-date">pred 2 mesiacmi</span>
+          </div>
+          <div class="review-stars">
+            <span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span><span class="star-filled">★</span>
+          </div>
+          <p class="review-text">Priviedol som aj syna na junior strih — barber bol trpezlivý, milý a výsledok bol famózny. Syn bol nadšený. Celé prostredie pôsobí profesionálne a pritom veľmi príjemne.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ SLUZBY ═══ -->
+<section class="section" id="sluzby">
+  <p class="section-label">Čo ponúkame</p>
+  <h2 class="section-title">Naše služby</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">✂️</span>
+      <div class="service-name">Skin Fade</div>
+      <p class="service-desc">Precízny prechod od kože po požadovanú dĺžku. Vrchol barberskej techniky.</p>
+      <div class="service-price">od 19 €</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💈</span>
+      <div class="service-name">Strojčekový strih</div>
+      <p class="service-desc">Klasický strojčekový strih upravený presne podľa vašich predstáv.</p>
+      <div class="service-price">od 17 €</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🪒</span>
+      <div class="service-name">Úprava brady</div>
+      <p class="service-desc">Tvarovanie a úprava brady pre dokonalý výsledok každý deň.</p>
+      <br>
+      <div class="service-price">od 14 €</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">👦</span>
+      <div class="service-name">Junior strih</div>
+      <p class="service-desc">Špeciálna starostlivosť pre mladých klientov s trpezlivosťou a štýlom.</p>
+      <div class="service-price">od 14 €</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">👴</span>
+      <div class="service-name">Senior strih</div>
+      <p class="service-desc">Tradičný prístup pre zákazníkov, ktorí oceňujú klasiku a komfort.</p>
+      <br>
+      <div class="service-price">od 17 €</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">⭐</span>
+      <div class="service-name">Skin Fade + Brada</div>
+      <p class="service-desc">Kompletná starostlivosť — fade strih v kombinácii s úpravou brady.</p>
+      <div class="service-price">od 27 €</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ CENNIK ═══ -->
+<section id="cennik">
+  <p class="section-label">Transparentné ceny</p>
+  <h2 class="section-title">Cenník</h2>
+
+  <div class="cennik-cols">
+    <div>
+      <div class="cennik-col-header">
+        Pato Dragun
+      </div>
+      <div class="price-table">
+        <div class="price-category">
+          <div class="price-cat-header">Strihy</div>
+          <div class="price-row">
+            <span class="price-item-name">Skin Fade</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">22 €</span>
+          </div>
+          <div class="price-row">
+            <span class="price-item-name">Strojčekový strih</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">19 €</span>
+          </div>
+          <div class="price-row">
+            <span class="price-item-name">Junior strih</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">17 €</span>
+          </div>
+          <div class="price-row">
+            <span class="price-item-name">Senior strih</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">17 €</span>
+          </div>
+        </div>
+        <div class="price-category">
+          <div class="price-cat-header">Brada</div>
+          <div class="price-row">
+            <span class="price-item-name">Úprava brady</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">17 €</span>
+          </div>
+        </div>
+        <div class="price-category">
+          <div class="price-cat-header">Kombinácie</div>
+          <div class="price-row">
+            <span class="price-item-name">Skin Fade + úprava brady</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">32 €</span>
+          </div>
+          <div class="price-row">
+            <span class="price-item-name">Strojčekový + úprava brady</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">27 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="cennik-col-header">
+        Tím barberov
+      </div>
+      <div class="price-table">
+        <div class="price-category">
+          <div class="price-cat-header">Strihy</div>
+          <div class="price-row">
+            <span class="price-item-name">Skin Fade</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">19 €</span>
+          </div>
+          <div class="price-row">
+            <span class="price-item-name">Strojčekový strih</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">17 €</span>
+          </div>
+          <div class="price-row">
+            <span class="price-item-name">Junior strih</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">14 €</span>
+          </div>
+          <div class="price-row">
+            <span class="price-item-name">Senior strih</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">17 €</span>
+          </div>
+        </div>
+        <div class="price-category">
+          <div class="price-cat-header">Brada</div>
+          <div class="price-row">
+            <span class="price-item-name">Úprava brady</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">14 €</span>
+          </div>
+        </div>
+        <div class="price-category">
+          <div class="price-cat-header">Kombinácie</div>
+          <div class="price-row">
+            <span class="price-item-name">Skin Fade + úprava brady</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">27 €</span>
+          </div>
+          <div class="price-row">
+            <span class="price-item-name">Strojčekový + úprava brady</span>
+            <div class="price-dots"></div>
+            <span class="price-amount">25 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ GALERIA ═══ -->
+<!--
+  ════════════════════════════════════════════════
+  GALÉRIA — horizontálny scroll
+  ────────────────────────────────────────────────
+  Ako pridať fotku:
+    Skopíruj jeden blok <div class="g-item">...</div>
+    a zmeň src na názov súboru, napr. galeria7.jpg
+
+  Ako odstrániť fotku:
+    Zmaž celý <div class="g-item">...</div> blok
+
+  Formát súborov: .jpg alebo .png podľa tvojich fotiek
+  ════════════════════════════════════════════════
+-->
+<section id="galeria">
+  <p class="section-label">Naša práca</p>
+  <h2 class="section-title">Galéria</h2>
+
+  <div class="gallery-scroll-wrap">
+    <div class="gallery-scroll" id="galleryScroll">
+
+      <!-- ─── FOTKA 1 ─── -->
+      <div class="g-item">
+        <img src="galeria1.png" alt="Galéria 1" />
+        <div class="g-overlay"><span class="g-overlay-icon">+</span></div>
+      </div>
+
+      <!-- ─── FOTKA 2 ─── -->
+      <div class="g-item">
+        <img src="galeria2.png" alt="Galéria 2" />
+        <div class="g-overlay"><span class="g-overlay-icon">+</span></div>
+      </div>
+
+      <!-- ─── FOTKA 3 ─── -->
+      <div class="g-item">
+        <img src="galeria3.png" alt="Galéria 3" />
+        <div class="g-overlay"><span class="g-overlay-icon">+</span></div>
+      </div>
+
+      <!-- ─── FOTKA 4 ─── -->
+      <div class="g-item">
+        <img src="galeria4.png" alt="Galéria 4" />
+        <div class="g-overlay"><span class="g-overlay-icon">+</span></div>
+      </div>
+
+      <!-- ─── FOTKA 5 ─── -->
+      <div class="g-item">
+        <img src="galeria5.png" alt="Galéria 5" />
+        <div class="g-overlay"><span class="g-overlay-icon">+</span></div>
+      </div>
+
+      <!-- ─── FOTKA 6 ─── -->
+      <div class="g-item">
+        <img src="galeria6.png" alt="Galéria 6" />
+        <div class="g-overlay"><span class="g-overlay-icon">+</span></div>
+      </div>
+
+      <!-- Sem pridaj ďalšie fotky podľa potreby -->
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ REZERVACIA ═══ -->
+<section id="rezervacia">
+  <p class="section-label">Jednoducho a rýchlo</p>
+  <h2 class="section-title">Rezervácia</h2>
+  <div class="rezervacia-center">
+    <p class="section-body">
+      Zarezervujte si termín online cez náš rezervačný systém. Rýchlo, jednoducho a bez čakania.
+    </p>
+    <a href="https://booqme.sk/sk/rezervacia/fade-room-studio" target="_blank" rel="noopener" class="btn-booking">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5zm2 4h10v2H7zm0 4h7v2H7z"/>
+      </svg>
+      Rezervovať termín online
+    </a>
+    <p class="booking-note">Budete presmerovaní na náš rezervačný systém Booqme</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ KONTAKT ═══ -->
+<section id="kontakt">
+  <p class="section-label">Nájdete nás</p>
+  <h2 class="section-title">Kontakt</h2>
+  <div class="kontakt-grid">
+    <div class="kontakt-map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.0!2d18.1930!3d48.0907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b6b1d2e5e6a4f%3A0x1!2sHled%C3%ADkova+4%2C+%C5%A0urany!5e0!3m2!1ssk!2ssk!4v1700000000000!5m2!1ssk!2ssk"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Fade Room Studio mapa">
+      </iframe>
+    </div>
+    <div class="kontakt-details">
+      <div class="contact-item">
+        <div class="contact-item-label">Adresa</div>
+        <div class="contact-item-value">Hledíkova 4<br>942 01 Šurany, Slovenská republika</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-label">Telefón</div>
+        <div class="contact-item-value">
+          <a href="tel:+421949534282">0949 534 282</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-label">Otváracie hodiny</div>
+        <div class="contact-item-value">
+          Pondelok – Piatok: 7:00 – 18:00<br>
+          Sobota – Nedeľa: Zatvorené
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-label">Email</div>
+        <div class="contact-item-value">
+          <a href="mailto:faderoomstudio@gmail.com">faderoomstudio@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer id="footer">
+  <!-- Logo v strede dole -->
+  <img src="logo1.png"
+       alt="Fade Room Studio"
+       class="footer-logo-img" />
+
+  <div class="footer-rule"></div>
+
+  <!-- Instagram odkaz -->
+  <a href="https://www.instagram.com/faderoomstudio/"
+     target="_blank"
+     rel="noopener"
+     class="footer-instagram"
+     aria-label="Instagram">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+    </svg>
+  </a>
+
+  <!-- Copyright -->
+  <div class="footer-copy">
+    © FADE ROOM 2026. All Rights Reserved.<br>
+    Created by <a href="#">PCN Studio</a>
+  </div>
+</footer>
+
+<!-- ═══ JAVASCRIPT ═══ -->
+<script>
+  /* ── Navbar scroll efekt ── */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  /* ── Hamburger menu ── */
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+    document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+  });
+
+  function closeMobile() {
+    hamburger.classList.remove('open');
+    mobileNav.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  /* ── Galéria — drag to scroll ── */
+  const gallery = document.getElementById('galleryScroll');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  gallery.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - gallery.offsetLeft;
+    scrollLeft = gallery.scrollLeft;
+  });
+
+  gallery.addEventListener('mouseleave', () => { isDown = false; });
+  gallery.addEventListener('mouseup',    () => { isDown = false; });
+
+  gallery.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x    = e.pageX - gallery.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    gallery.scrollLeft = scrollLeft - walk;
+  });
+</script>
+
+</body>
+</html>
